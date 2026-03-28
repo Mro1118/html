@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <link rel="stylesheet" href="./all.min.css">
+    <style>
+        /* 헤더탑 스타일 */
+        .header-top-wrap {}
+
+        .header-top-wrap>header-top {}
+
+        .header-top-wrap>header-top>h1 {}
+
+        /* 헤더 스타일 */
+        .header-wrap {}
+
+        .header-wrap>header {}
+
+        .header-wrap>header>h1 {}
+
+        .header-wrap>header>ul {}
+
+        .header-wrap>header>ul>li {}
+
+        /* 콘텐츠 공통 */
+        .content-wrap {}
+
+        .content-wrap>.content>header> {}
+
+        .content-wrap>.content>header>h2 {}
+
+        .content-wrap>.content>header>h4 {}
+
+        .content-wrap>.content>section> {}
+
+        .content-wrap>.content>section>article> {}
+
+        .content-wrap>.content>section>article>.image {}
+
+        .content-wrap>.content>section>article>.text {}
+
+        .content-wrap>.content>section>article>.text>h3 {}
+
+        .content-wrap>.content>section>article>.text>h4 {}
+
+        .content-wrap>.content>section>article>.text>p {}
+
+        .content-wrap>.content>section>article>.text>.icons {}
+
+
+        /* 콘텐츠 1번 */
+        .content-wrap.cnt-wrap1{}
+        .content-wrap.cnt-wrap1>.content.cnt1{}
+        .content-wrap.cnt-wrap1>.content.cnt1>header{}
+        .content-wrap.cnt-wrap1>.content.cnt1>header>h2{}
+        .content-wrap.cnt-wrap1>.content.cnt1>header>h4{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-top{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h3{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h4{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>p{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>.icons{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt>article{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt>article>.image{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt>article>.text{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt>article>.text>h3{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt>article>.text>p{}
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt>article>.text>.icons{}
+        
+        
+
+
+
+
+    </style>
+    <!-- 인라인 스타일 -->
+
+    <!-- 외부 호출 스타일 -->
+</head>
+
+<body>
+    <!-- 헤더탑 -->
+    <div class="header-top-wrap">
+        <div class="header-top">
+            <i class="fa-solid fa-sleigh"></i>
+        </div>
+    </div>
+    <!-- 헤더 -->
+    <div class="header-wrap">
+        <header>
+            <h1>Logo here</h1>
+            <ul>
+                <li>about</li>
+                <li>news</li>
+                <li>portfolio</li>
+            </ul>
+        </header>
+    </div>
+    <!-- 콘텐츠 1번 -->
+    <div class="content-wrap cnt-wrap1">
+        <div class="content cnt1">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            </header>
+            <section>
+                <!-- 상단 디자인 -->
+                <div class="art-top">
+                    <article>
+                        <div class="image">이미지</div>
+                        <div class="text">
+                            <H3>article title</H3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, officiis?</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">이미지</div>
+                        <div class="text">
+                            <H3>article title</H3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, officiis?</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- 디자인 아래 쪽 -->
+                <div class="art-bnt">
+                    <article>
+                        <div class="image">이미지</div>
+                        <div class="text">
+                            <H3>article title</H3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, officiis?</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">이미지</div>
+                        <div class="text">
+                            <h3>article title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, consequatur.</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">이미지</div>
+                        <div class="text">
+                            <h3>article title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, illum?</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+        </div>
+        </article>
+    </div>
+    </section>
+    </div>
+    </div>
+    <!-- 콘텐츠 2번 -->
+    <div class="content-wrap cnt-wrap2">
+        <div class="content cnt2">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            </header>
+            <section>
+                <article>
+                    <div class="image"></div>
+                    <div class="text">
+                        <h3>artivle title</h3>
+                        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, cum.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dicta.</p>
+                        <button>button</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <!-- 콘텐츠 3번  -->
+    <div class="content-wrap cnt-wrap3">
+        <div class="content cnt3">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            </header>
+            <section>
+                <article1>
+                    <div class="image">이미지</div>
+                    <div class="text">
+                        <h3>article title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </article1>
+                <article2>
+                    <div class="image">이미지</div>
+                    <div class="text">
+                        <h3>article title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </article2>
+                <article3>
+                    <div class="image">이미지</div>
+                    <div class="text">
+                        <h3>article title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </article3>
+                <article4>
+                    <div class="image">이미지</div>
+                    <div class="text">
+                        <h3>article title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </article4>
+            </section>
+        </div>
+    </div>
+    <!-- 푸터   -->
+    <div class="footer-wrap">
+        <footer>
+            <h4>logo here</h4>
+            <address>Lorem ipsum dolor sit amet consectetur.</address>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>
