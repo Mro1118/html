@@ -7,10 +7,16 @@
     <title>selector</title>
     <link rel="stylesheet" href="./all.min.css">
     <style>
+
+        /* 요소 */
+        .. 이면 동등요소
+        . 띄고 . 이면 하위요소
+
         /* 헤더탑 스타일 */
         .header-top-wrap {}
 
         .header-top-wrap>.header-top {}
+        .header-top-wrap>.header-top>i {}
 
 
         /* 헤더 스타일 */
@@ -48,6 +54,8 @@
         .content-wrap>.content>section>article>.text>p {}
 
         .content-wrap>.content>section>article>.text>.icons {}
+
+        .content-wrap>.content>section>.article>.text>.icons>i {}
 
 
         /* 콘텐츠 1번 */
@@ -92,6 +100,35 @@
         .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt>article>.text>p {}
 
         .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt>article>.text>.icons {}
+
+        .content-wrap.cnt-wrap1>.content.cnt1>section>.art-bnt>article>.text>.icons>i {}
+
+        /* 콘텐츠 2번 */
+        .ccontent-wrap.cnt-wrap2{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>header{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>header{}>h2{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>header{}>h4{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>section{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>section>article{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>section>article>.image{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>section>article>>.text{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>section>article>>.text{}>h3{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>section>article>>.text{}>h4{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>section>article>>.text{}>p{}
+        .ccontent-wrap.cnt-wrap2{}>.content.cnt2>section>article>>.text{}>button{}
+
+        /* 콘텐츠3 */
+        .content-wrap.cnt-wrap3{}
+        .content-wrap.cnt-wrap3{}>content.cnt3{}
+        .content-wrap.cnt-wrap3{}>content.cnt3{}>header{}
+        .content-wrap.cnt-wrap3{}>content.cnt3{}>header{}>h2{}
+        .content-wrap.cnt-wrap3{}>content.cnt3{}>header{}>h4{}
+        .content-wrap.cnt-wrap3{}>content.cnt3{}>section{}
+        .content-wrap.cnt-wrap3{}>content.cnt3{}>section{}>article{}
+        .content-wrap.cnt-wrap3{}>content.cnt3{}>section{}>artcle{}>.image{}
+
+        
     </style>
     <!-- 인라인 스타일 -->
 
@@ -221,34 +258,34 @@
                 <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
             </header>
             <section>
-                <article1>
+                <article>
                     <div class="image">이미지</div>
                     <div class="text">
                         <h3>article title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                </article1>
-                <article2>
+                </article>
+                <article>
                     <div class="image">이미지</div>
                     <div class="text">
                         <h3>article title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                </article2>
-                <article3>
+                </article>
+                <article>
                     <div class="image">이미지</div>
                     <div class="text">
                         <h3>article title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                </article3>
-                <article4>
+                </article>
+                <article>
                     <div class="image">이미지</div>
                     <div class="text">
                         <h3>article title</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                </article4>
+                </article>
             </section>
         </div>
     </div>
