@@ -6,13 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습3</title>
     <link rel="stylesheet" href="./all.min.css">
-    <style></style>
+    <style>
+        /* 헤더탑 스타일 */
+        .hdr-top-wrap{}
+        .hdr-top-wrap>.hdr-top{}
+        .hdr-top-wrap>.hdr-top>i{}
+        /* 헤더 스타일 */
+        .hdr-wrap{}
+        .hdr-wrap>.hdr{}
+        .hdr-wrap>.hdr>h1{}
+        .hdr-wrap>.hdr>ul{}
+        .hdr-wrap>.hdr>ul>li{}
+         /* 콘텐츠 공통 스타일 */
+        .content-wrap.ctn-wrap{}
+        .content-wrap.ctn-wrap>.content.ctn{}
+        .content-wrap.ctn-wrap>.content.ctn>header{}
+        .content-wrap.ctn-wrap>.content.ctn>header>h1{}
+        .content-wrap.ctn-wrap>.content.ctn>header>h2{}
+        .content-wrap.ctn-wrap>.content.ctn>section{}
+        .content-wrap.ctn-wrap>.content.ctn>section>article{}
+        .content-wrap.ctn-wrap>.content.ctn>section>article>.image{}
+        .content-wrap.ctn-wrap>.content.ctn>section>article>.text{}
+        .content-wrap.ctn-wrap>.content.ctn>section>article>.text>h3{}
+        .content-wrap.ctn-wrap>.content.ctn>section>article>.text>h4{}
+        .content-wrap.ctn-wrap>.content.ctn>section>article>.text>p{}
+        .content-wrap.ctn-wrap>.content.ctn>section>article>.text>.icons{}
+       
+        /* 콘텐츠1 스타일(헤더)*/
+        .content-wrap.ctn-wrap1{}
+        .content-wrap.ctn-wrap1>.content.ctn1{}
+        .content-wrap.ctn-wrap1>.content.ctn1>header{}
+        .content-wrap.ctn-wrap1>.content.ctn1>header>h2{}
+        .content-wrap.ctn-wrap1>.content.ctn1>header>h3{}
+        /* 콘텐츠 스타일 위 */
+        .content-wrap.ctn-wrap1>.content.ctn1>section{}
+        
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-top{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-top>article{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-top>article>.image{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-top>article>.text{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-top>article>.text>h3{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-top>article>.text>h4{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-top>article>.text>p{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-top>article>.text>.icons{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-top>article>.text>.icons>i{}
+        
+        /* 콘텐츠1 스타일(아래) */
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-btn{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-btn>article{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-btn>article>.image{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-btn>article>.text{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-btn>article>.text>h3{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-btn>article>.text>p{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-btn>article>.text>.icons{}
+        .content-wrap.ctn-wrap1>.content.ctn1>section>.art-btn>article>.text>.icons>i{}
+
+         /* 콘텐츠2 스타일 */    
+        .content-wrap.ctn-wrap2{}
+        .content-wrap.ctn-wrap2>.content.ctn2{}
+        .content-wrap.ctn-wrap2>.content.ctn2>header{}
+        .content-wrap.ctn-wrap2>.content.ctn2>header>h2{}
+        .content-wrap.ctn-wrap2>.content.ctn2>header>h3{}
+        .content-wrap.ctn-wrap2>.content.ctn2>section{}
+        .content-wrap.ctn-wrap2>.content.ctn2>section>article{}
+        .content-wrap.ctn-wrap2>.content.ctn2>section>article>.image{}
+        .content-wrap.ctn-wrap2>.content.ctn2>section>article>.text{}
+        .content-wrap.ctn-wrap2>.content.ctn2>section>article>.text>h3{}
+        .content-wrap.ctn-wrap2>.content.ctn2>section>article>.text>h4{}
+        .content-wrap.ctn-wrap2>.content.ctn2>section>article>.text>p{}
+        .content-wrap.ctn-wrap2>.content.ctn2>section>article>.text>button{}
+
+        /* 콘텐츠3 스타일 */
+        .content-wrap.ctn-wrap3{}
+        .content-wrap.ctn-wrap3>.content.ctn3{}
+        .content-wrap.ctn-wrap3>.content.ctn3>header{}
+        .content-wrap.ctn-wrap3>.content.ctn3>header>h2{}
+        .content-wrap.ctn-wrap3>.content.ctn3>header>h3{}
+        .content-wrap.ctn-wrap3>.content.ctn3>section{}
+        .content-wrap.ctn-wrap3>.content.ctn3>section>article{}
+        .content-wrap.ctn-wrap3>.content.ctn3>section>article>.image{}
+        .content-wrap.ctn-wrap3>.content.ctn3>section>article>.text{}
+        .content-wrap.ctn-wrap3>.content.ctn3>section>article>.text>h3{}
+        .content-wrap.ctn-wrap3>.content.ctn3>section>article>.text>p{}
+
+        /* 푸터 스타일 */
+        .footer-wrap{}
+        .footer-wrap>footer{}
+        .footer-wrap>footer>h4{}
+        .footer-wrap>footer>address{}
+        .footer-wrap>footer>.icons{}
+        .footer-wrap>footer>.icons>i{}
+
+
+
+
+
+
+    </style>
 </head>
 
 <body>
     <!-- 헤더탑 -->
     <div class="hdr-top-wrap">
-        <div class="hdr">
+        <div class="hdr-top">
             <i class="fa-solid fa-sleigh"></i>
         </div>
     </div>
@@ -28,11 +124,11 @@
         </div>
     </div>
     <!-- 콘텐츠 -->
-    <div class="content-wrap cnt-wrap1">
-        <div class="contnet cnt1">
+    <div class="content-wrap ctn-wrap1">
+        <div class="content ctn1">
             <header>
-                <h1>content title</h1>
-                <h2>sub-title</h2>
+                <h2>content title</h2>
+                <h3>sub-title</h3>
             </header>
             <section>
                 <div class="art-top">
@@ -100,11 +196,11 @@
         </div>
     </div>
     <!-- 콘텐츠2 -->
-    <div class="content-wrap cnt-wrap2">
-        <div class="contnet cnt2">
+    <div class="content-wrap ctn-wrap2">
+        <div class="content ctn2">
             <header>
-                <h1>content title</h1>
-                <h2>sub-title</h2>
+                <h2>content title</h2>
+                <h3>sub-title</h3>
             </header>
             <section>
                 <article>
@@ -120,11 +216,11 @@
         </div>
     </div>
     <!-- 콘텐츠3 -->
-    <div class="content-wrap cnt-wrap3">
-        <div class="contnet cnt3">
+    <div class="content-wrap ctn-wrap3">
+        <div class="content ctn3">
             <header>
-                <h1>content title</h1>
-                <h2>sub-title</h2>
+                <h2>content title</h2>
+                <h3>sub-title</h3>
             </header>
             <section>
                 <article>
